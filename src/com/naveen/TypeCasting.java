@@ -18,6 +18,7 @@ public class TypeCasting {
 		char e = (char) d; // To convert integer to char
 		System.out.println(d);
 		System.out.println(e);
+
 	}
 
 }
