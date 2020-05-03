@@ -17,14 +17,14 @@ public class ParserDemo {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document doc = builder.parse("D:\\Java_programs\\Javaexamples\\src\\myxml.xml");
 
-			System.out.println("Rootelement: " + doc.getDocumentElement().getNodeName());
+			System.out.println("RootElement: " + doc.getDocumentElement().getNodeName());
 			System.out.println("===========================================");
 
 			NodeList list = doc.getElementsByTagName("student");
 
 			for (int i = 0; i < list.getLength(); i++) {
 				Node n = list.item(i);
-				System.out.println("Nodename: " + n.getNodeName());
+				System.out.println("NodeName: " + n.getNodeName());
 				System.out.println("===========================================");
 				Element e = (Element) n;
 				System.out.println("name:   " + e.getElementsByTagName("name").item(0).getTextContent());
